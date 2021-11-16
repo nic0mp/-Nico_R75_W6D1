@@ -254,9 +254,9 @@ console.log(count_with_do_while())
 */
 //  Create an array: groupOfNames
 
-let groupOfNames = ['Brock','Misty','Ash','Gary','Al']
+let groupOfNames = ['Brock','Misty','Ash','Gary','Alphonso']
 // Index for the first position 
-console.log(groupOfNames[0])
+console.log(groupOfNames[0]) //Brock
 
 // Deconstruction of an array
 let brock, misty, ash, others;
@@ -270,12 +270,13 @@ console.log(ash)
 console.log(others)
 
 // method 1 for looping through an array
-
+// i starts at index 0, it goes up to the length of list(4)
 function showAllNames(namesList){
-    for(let i =0; i < namesList.length; i++){
+    for(let i =0; i < namesList.length; i++){ 
         console.log(namesList[i])
-        return 'Done with list.'
+       
     }
+    return 'Done with list'
 }
 console.log(showAllNames(groupOfNames))
 
@@ -310,7 +311,7 @@ let numsReduced = nums.reduce((accumulator, currentNum) => {
 console.log(numsReduced)
 
 // .filter
-let longNames = groupOfNames.filter(name => name.length > 4)
+let longNames = groupOfNames.filter(name => name.length > 3)
 console.log(longNames)
 
 // Array Methods with String Values: .join(), .slice(), .search(), .splice()
