@@ -7,14 +7,15 @@ the list and checks that the current name is in the string passed in. The output
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 let dog_names = ["Max","HAS","PuRple","dog"]
  
-function showAllNames(namesList){
-    for(let i =0; i < namesList.length; i++){ 
-        console.log(namesList[i])
-       
-    }
-    return dog_string
+function showAllNames(namesList, bstring){
+    for(let i =0; i < namesList.length; i++)
+        if(bstring.search(namesList[i]) !=-1) {
+            console.log(`matched ${namesList[i]}`);
+        } else {
+            console.log(`No matches for ${namesList[i]}`);
+        }
 }
-console.log(showAllNames(dog_names))
+console.log(showAllNames(dog_names,dog_string))
 
 
 //============Exercise #2 ============//

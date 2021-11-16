@@ -292,7 +292,7 @@ console.log(typeof(groupOfNames.toString()))
 
 // .map()
 let b_names = groupOfNames.map( i => {
-    if (i[0] == 'A'){
+    if (i[0] == 'B'){
         return i
     } else {
         return false
