@@ -7,13 +7,15 @@ the list and checks that the current name is in the string passed in. The output
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 let dog_names = ["Max","HAS","PuRple","dog"]
  
-function findWords(nList){
-    for(let i =0; i < nList.length; i++){
-        console.log(nList[i])
+function showAllNames(namesList){
+    for(let i =0; i < namesList.length; i++){ 
+        console.log(namesList[i])
        
     }
-   
-console.log(findWords(dog_names))
+    return dog_string
+}
+console.log(showAllNames(dog_names))
+
 
 //============Exercise #2 ============//
 /*Write a fucntion that takes in an array and removes every even index with a splice,
