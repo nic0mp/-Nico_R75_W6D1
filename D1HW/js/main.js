@@ -35,3 +35,30 @@ console.log(replaceEvens("even index"))
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
+
+// CODEWAR
+
+// def greet(name, owner):
+//     if name == owner:
+//         return 'Hello boss'
+//     return 'Hello guest'
+
+function greet(name1, owner){
+    if (name1 == owner) {
+        console.log('Hello boss')
+    } else {
+        console.log('Hello guest')
+    }
+}
+// Return Negative
+// def make_negative( number ):
+//     if number < 0:
+//         return number
+//     return number * -1
+function make_negative(num){
+    if (num <0){
+        return num
+    } else {
+        return (num*-1)
+    }
+}

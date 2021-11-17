@@ -136,7 +136,7 @@ console.log(addNums3(4,8))
 
 //E6+ ARROW FUNCTION WITH SINGLE PARAMETER
 /**
-  Using a single parameter in an arrow funtion WITHOUT parens 
+  Using a single parameter in an arrow function WITHOUT parens 
   can only be done with ONE parameter NOT if 2 or more are introduced.
  */
 
@@ -150,6 +150,10 @@ let cubed2 = num => {
 
 console.log(cubed(4))
 console.log(cubed2(5))
+
+let sum2 = (a,b) => a + b
+console.log(sum2(7,8))
+
 
 // Javascript Closure
 // Self-Invoking Funct
